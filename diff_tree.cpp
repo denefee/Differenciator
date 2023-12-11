@@ -6,10 +6,6 @@
 #include "diff_tree.hpp"
 
 
-//кафедра приветствует тебя, если ты дочитал до этого места
-//
-
-
 Tree_node *New_node (NODE_TYPE type, OPERATORS op_value, const char *variable, double number, 
                     Tree_node *left, Tree_node *right,   size_t str_pos,       size_t str_num)
 {
