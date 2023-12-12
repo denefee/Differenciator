@@ -1,0 +1,10 @@
+((ln ((x) + (z))) * ((3) + (y)))
+Derivative power:              1
+Function calculation point:    100
+Derivative calculation point:  5
+Number of taylor series:       7
+Tangent point:                 2
+Graph range:                   (-5, 15), (0, 15)    #(x_min, x_max), (y_min, y_max)
+Constants:
+y = 4
+z = 5

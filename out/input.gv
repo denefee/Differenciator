@@ -1,0 +1,65 @@
+digraph {
+    labelloc = "t"
+    fontsize = "70"
+    nodesep = 0.4
+    node [shape = record]
+    splines=ortho
+    rankdir=TB
+    node0x55b74ce81de0 [label = "op:  +  L"]
+    node0x55b74ce821d0 [label = "op:  * "]
+    node0x55b74ce81de0 -> node0x55b74ce821d0
+    node0x55b74ce821d0 [label = "op:  *  L"]
+    node0x55b74ce823a0 [label = "op:  \\ "]
+    node0x55b74ce821d0 -> node0x55b74ce823a0
+    node0x55b74ce823a0 [label = "op:  \\  L"]
+    node0x55b74ce82600 [label = "op:  + "]
+    node0x55b74ce823a0 -> node0x55b74ce82600
+    node0x55b74ce82600 [label = "op:  +  L"]
+    node0x55b74ce826a0 [label = "num: 1"]
+    node0x55b74ce82600 -> node0x55b74ce826a0
+    node0x55b74ce82600 [label = "op:  +  R"]
+    node0x55b74ce82650 [label = "num: 0"]
+    node0x55b74ce82600 -> node0x55b74ce82650
+    node0x55b74ce823a0 [label = "op:  \\  R"]
+    node0x55b74ce823f0 [label = "op:  + "]
+    node0x55b74ce823a0 -> node0x55b74ce823f0
+    node0x55b74ce823f0 [label = "op:  +  L"]
+    node0x55b74ce82520 [label = "var: x"]
+    node0x55b74ce823f0 -> node0x55b74ce82520
+    node0x55b74ce823f0 [label = "op:  +  R"]
+    node0x55b74ce82440 [label = "var: z"]
+    node0x55b74ce823f0 -> node0x55b74ce82440
+    node0x55b74ce821d0 [label = "op:  *  R"]
+    node0x55b74ce82220 [label = "op:  + "]
+    node0x55b74ce821d0 -> node0x55b74ce82220
+    node0x55b74ce82220 [label = "op:  +  L"]
+    node0x55b74ce82350 [label = "num: 3"]
+    node0x55b74ce82220 -> node0x55b74ce82350
+    node0x55b74ce82220 [label = "op:  +  R"]
+    node0x55b74ce82270 [label = "var: y"]
+    node0x55b74ce82220 -> node0x55b74ce82270
+    node0x55b74ce81de0 [label = "op:  +  R"]
+    node0x55b74ce81e30 [label = "op:  * "]
+    node0x55b74ce81de0 -> node0x55b74ce81e30
+    node0x55b74ce81e30 [label = "op:  *  L"]
+    node0x55b74ce81f70 [label = "op: ln"]
+    node0x55b74ce81e30 -> node0x55b74ce81f70
+    node0x55b74ce81f70 [label = "op: ln R"]
+    node0x55b74ce81fc0 [label = "op:  + "]
+    node0x55b74ce81f70 -> node0x55b74ce81fc0
+    node0x55b74ce81fc0 [label = "op:  +  L"]
+    node0x55b74ce820f0 [label = "var: x"]
+    node0x55b74ce81fc0 -> node0x55b74ce820f0
+    node0x55b74ce81fc0 [label = "op:  +  R"]
+    node0x55b74ce82010 [label = "var: z"]
+    node0x55b74ce81fc0 -> node0x55b74ce82010
+    node0x55b74ce81e30 [label = "op:  *  R"]
+    node0x55b74ce81e80 [label = "op:  + "]
+    node0x55b74ce81e30 -> node0x55b74ce81e80
+    node0x55b74ce81e80 [label = "op:  +  L"]
+    node0x55b74ce81f20 [label = "num: 0"]
+    node0x55b74ce81e80 -> node0x55b74ce81f20
+    node0x55b74ce81e80 [label = "op:  +  R"]
+    node0x55b74ce81ed0 [label = "num: 0"]
+    node0x55b74ce81e80 -> node0x55b74ce81ed0
+}
