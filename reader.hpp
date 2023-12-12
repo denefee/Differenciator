@@ -1,32 +1,28 @@
-#ifndef READER_HPP_INCLUDED
-#define READER_HPP_INCLUDED
+#pragma once
 
 #include "diff_tree.hpp"
 
 #define IS_TYPE(type_val) tokens->array[tokens->size]->type == type_val
 #define IS_OP(op_val)     tokens->array[tokens->size]->op_value == op_val
-#define IS_UNARY()        IS_OP (OP_SIN) or IS_OP (OP_COS) or IS_OP (OP_LN) or IS_OP (OP_TAN)
+#define IS_UNARY()        IS_OP (Operator::SIN) or IS_OP (Operator::COS) or IS_OP (Operator::LN) or IS_OP (Operator::TAN)
 
-struct Tree_tokens
-{
+struct Tree_tokens {
     size_t size = 0;
     size_t capacity = 0;
-    Tree_node **array = NULL;
-    Tree_node *current = NULL;
+    TreeNode **array = nullptr;
+    TreeNode *current = nullptr;
 };
 
-Tree_node* Get_G (Tree_tokens *tokens);
-Tree_node* Get_E (Tree_tokens *tokens);
-Tree_node* Get_T (Tree_tokens *tokens);
-Tree_node* Get_P (Tree_tokens *tokens);
-Tree_node* Get_N (Tree_tokens *tokens);
-Tree_node* Get_W (Tree_tokens *tokens);
-Tree_node* Get_V (Tree_tokens *tokens);
-Tree_node* Get_F (Tree_tokens *tokens);
+TreeNode* Get_G (Tree_tokens *tokens);
+TreeNode* Get_E (Tree_tokens *tokens);
+TreeNode* Get_T (Tree_tokens *tokens);
+TreeNode* Get_P (Tree_tokens *tokens);
+TreeNode* Get_N (Tree_tokens *tokens);
+TreeNode* Get_W (Tree_tokens *tokens);
+TreeNode* Get_V (Tree_tokens *tokens);
+TreeNode* Get_F (Tree_tokens *tokens);
 
 Tree_tokens *Tokenizer (const char **str);
-Tree_node *Is_num      (const char **str);
-Tree_node *Is_variable (const char **str);
-Tree_node *Is_operator (const char **str);
-
-#endif
+TreeNode *Is_num      (const char **str);
+TreeNode *Is_variable (const char **str);
+TreeNode *Is_operator (const char **str);
