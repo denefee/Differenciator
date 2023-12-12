@@ -154,8 +154,8 @@ TreeNode *Get_P(Tree_tokens *tokens) {
 TreeNode *Get_N(Tree_tokens *tokens) {
     if (IS_TYPE(NodeType::num))
         return tokens->array[tokens->size++];
-    else
-        printf("get number error");
+    
+    printf("get number error");
 
     return nullptr;
 }
@@ -163,8 +163,7 @@ TreeNode *Get_N(Tree_tokens *tokens) {
 TreeNode *Get_V(Tree_tokens *tokens) {
     if (IS_TYPE(NodeType::var))
         return tokens->array[tokens->size++];
-    else
-        printf("get variable error");
+    printf("get variable error");
 
     return nullptr;
 }

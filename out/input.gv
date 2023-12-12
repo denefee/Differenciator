@@ -5,61 +5,61 @@ digraph {
     node [shape = record]
     splines=ortho
     rankdir=TB
-    node0x55b74ce81de0 [label = "op:  +  L"]
-    node0x55b74ce821d0 [label = "op:  * "]
-    node0x55b74ce81de0 -> node0x55b74ce821d0
-    node0x55b74ce821d0 [label = "op:  *  L"]
-    node0x55b74ce823a0 [label = "op:  \\ "]
-    node0x55b74ce821d0 -> node0x55b74ce823a0
-    node0x55b74ce823a0 [label = "op:  \\  L"]
-    node0x55b74ce82600 [label = "op:  + "]
-    node0x55b74ce823a0 -> node0x55b74ce82600
-    node0x55b74ce82600 [label = "op:  +  L"]
-    node0x55b74ce826a0 [label = "num: 1"]
-    node0x55b74ce82600 -> node0x55b74ce826a0
-    node0x55b74ce82600 [label = "op:  +  R"]
-    node0x55b74ce82650 [label = "num: 0"]
-    node0x55b74ce82600 -> node0x55b74ce82650
-    node0x55b74ce823a0 [label = "op:  \\  R"]
-    node0x55b74ce823f0 [label = "op:  + "]
-    node0x55b74ce823a0 -> node0x55b74ce823f0
-    node0x55b74ce823f0 [label = "op:  +  L"]
-    node0x55b74ce82520 [label = "var: x"]
-    node0x55b74ce823f0 -> node0x55b74ce82520
-    node0x55b74ce823f0 [label = "op:  +  R"]
-    node0x55b74ce82440 [label = "var: z"]
-    node0x55b74ce823f0 -> node0x55b74ce82440
-    node0x55b74ce821d0 [label = "op:  *  R"]
-    node0x55b74ce82220 [label = "op:  + "]
-    node0x55b74ce821d0 -> node0x55b74ce82220
-    node0x55b74ce82220 [label = "op:  +  L"]
-    node0x55b74ce82350 [label = "num: 3"]
-    node0x55b74ce82220 -> node0x55b74ce82350
-    node0x55b74ce82220 [label = "op:  +  R"]
-    node0x55b74ce82270 [label = "var: y"]
-    node0x55b74ce82220 -> node0x55b74ce82270
-    node0x55b74ce81de0 [label = "op:  +  R"]
-    node0x55b74ce81e30 [label = "op:  * "]
-    node0x55b74ce81de0 -> node0x55b74ce81e30
-    node0x55b74ce81e30 [label = "op:  *  L"]
-    node0x55b74ce81f70 [label = "op: ln"]
-    node0x55b74ce81e30 -> node0x55b74ce81f70
-    node0x55b74ce81f70 [label = "op: ln R"]
-    node0x55b74ce81fc0 [label = "op:  + "]
-    node0x55b74ce81f70 -> node0x55b74ce81fc0
-    node0x55b74ce81fc0 [label = "op:  +  L"]
-    node0x55b74ce820f0 [label = "var: x"]
-    node0x55b74ce81fc0 -> node0x55b74ce820f0
-    node0x55b74ce81fc0 [label = "op:  +  R"]
-    node0x55b74ce82010 [label = "var: z"]
-    node0x55b74ce81fc0 -> node0x55b74ce82010
-    node0x55b74ce81e30 [label = "op:  *  R"]
-    node0x55b74ce81e80 [label = "op:  + "]
-    node0x55b74ce81e30 -> node0x55b74ce81e80
-    node0x55b74ce81e80 [label = "op:  +  L"]
-    node0x55b74ce81f20 [label = "num: 0"]
-    node0x55b74ce81e80 -> node0x55b74ce81f20
-    node0x55b74ce81e80 [label = "op:  +  R"]
-    node0x55b74ce81ed0 [label = "num: 0"]
-    node0x55b74ce81e80 -> node0x55b74ce81ed0
+    node0x5606ac54f1e0 [label = "op:  +  L"]
+    node0x5606ac54f5d0 [label = "op:  * "]
+    node0x5606ac54f1e0 -> node0x5606ac54f5d0
+    node0x5606ac54f5d0 [label = "op:  *  L"]
+    node0x5606ac54f7a0 [label = "op:  \\ "]
+    node0x5606ac54f5d0 -> node0x5606ac54f7a0
+    node0x5606ac54f7a0 [label = "op:  \\  L"]
+    node0x5606ac54fa00 [label = "op:  + "]
+    node0x5606ac54f7a0 -> node0x5606ac54fa00
+    node0x5606ac54fa00 [label = "op:  +  L"]
+    node0x5606ac54faa0 [label = "num: 1"]
+    node0x5606ac54fa00 -> node0x5606ac54faa0
+    node0x5606ac54fa00 [label = "op:  +  R"]
+    node0x5606ac54fa50 [label = "num: 0"]
+    node0x5606ac54fa00 -> node0x5606ac54fa50
+    node0x5606ac54f7a0 [label = "op:  \\  R"]
+    node0x5606ac54f7f0 [label = "op:  + "]
+    node0x5606ac54f7a0 -> node0x5606ac54f7f0
+    node0x5606ac54f7f0 [label = "op:  +  L"]
+    node0x5606ac54f920 [label = "var: x"]
+    node0x5606ac54f7f0 -> node0x5606ac54f920
+    node0x5606ac54f7f0 [label = "op:  +  R"]
+    node0x5606ac54f840 [label = "var: z"]
+    node0x5606ac54f7f0 -> node0x5606ac54f840
+    node0x5606ac54f5d0 [label = "op:  *  R"]
+    node0x5606ac54f620 [label = "op:  + "]
+    node0x5606ac54f5d0 -> node0x5606ac54f620
+    node0x5606ac54f620 [label = "op:  +  L"]
+    node0x5606ac54f750 [label = "num: 3"]
+    node0x5606ac54f620 -> node0x5606ac54f750
+    node0x5606ac54f620 [label = "op:  +  R"]
+    node0x5606ac54f670 [label = "var: y"]
+    node0x5606ac54f620 -> node0x5606ac54f670
+    node0x5606ac54f1e0 [label = "op:  +  R"]
+    node0x5606ac54f230 [label = "op:  * "]
+    node0x5606ac54f1e0 -> node0x5606ac54f230
+    node0x5606ac54f230 [label = "op:  *  L"]
+    node0x5606ac54f370 [label = "op: ln"]
+    node0x5606ac54f230 -> node0x5606ac54f370
+    node0x5606ac54f370 [label = "op: ln R"]
+    node0x5606ac54f3c0 [label = "op:  + "]
+    node0x5606ac54f370 -> node0x5606ac54f3c0
+    node0x5606ac54f3c0 [label = "op:  +  L"]
+    node0x5606ac54f4f0 [label = "var: x"]
+    node0x5606ac54f3c0 -> node0x5606ac54f4f0
+    node0x5606ac54f3c0 [label = "op:  +  R"]
+    node0x5606ac54f410 [label = "var: z"]
+    node0x5606ac54f3c0 -> node0x5606ac54f410
+    node0x5606ac54f230 [label = "op:  *  R"]
+    node0x5606ac54f280 [label = "op:  + "]
+    node0x5606ac54f230 -> node0x5606ac54f280
+    node0x5606ac54f280 [label = "op:  +  L"]
+    node0x5606ac54f320 [label = "num: 0"]
+    node0x5606ac54f280 -> node0x5606ac54f320
+    node0x5606ac54f280 [label = "op:  +  R"]
+    node0x5606ac54f2d0 [label = "num: 0"]
+    node0x5606ac54f280 -> node0x5606ac54f2d0
 }

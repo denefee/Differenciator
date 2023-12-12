@@ -390,7 +390,7 @@ void Print_tex_title(FILE *tex_file, Root *tree_root, Constants *f_constants) {
 
     fprintf(tex_file, "\\documentclass{article}\n"
                       "\\usepackage[utf8]{inputenc}\n"
-                      //   "\\usepackage[T2A]{fontenc}\n"
+                        "\\usepackage[T2A]{fontenc}\n"
                       "\\usepackage[russian]{babel}\n"
                       "\\usepackage{amsthm}\n"
                       "\\usepackage{amssymb}\n"

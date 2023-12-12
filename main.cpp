@@ -19,7 +19,6 @@ int main() {
         printf("tex open error");
 
     read_t_file(&text, "out/tree_input.txt", &tree, &func_constants);
-    printf("succes read file\n");
 
     Print_tex_title(tex_file, &tree, &func_constants);
 
