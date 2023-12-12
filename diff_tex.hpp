@@ -1,6 +1,4 @@
-#ifndef DIFF_TEX_HPP_INCLUDED
-#define DIFF_TEX_HPP_INCLUDED
-
+#pragma once 
 
 #include "diff_tree.hpp"
 #include "file_analize.hpp"
@@ -11,6 +9,3 @@ void Taylor_series_calculation     (Text *text, Root* tree, Constants *);
 void Calculate_function_in_point   (Text *text, Root *tree, Constants *);
 void Calculate_derivative_in_point (Text *text, Root *diff_tree, Constants *);
 void Calculate_full_derivative     (Root *tree, Constants *f_constants);
-
-
-#endif
