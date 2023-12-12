@@ -51,7 +51,7 @@ void Taylor_series_calculation(Text *text, Root *tree, Constants *f_constants) {
     }
 
     fprintf(tex_file,
-            "\n\\section{Разложение данной функции в ряд Тейлора.}\n\n");
+            "\n\\section{Разложение данной функции в ряд Тейлора}\n\n");
 
     fprintf(tex_file, "$");
     Print_tex(tex_file, 0, taylor_tree.first_node);
@@ -104,7 +104,7 @@ void Graph_plotter(Text *text, Root *tree, const char *graph_file_name,
     }
 
     fprintf(tex_file,
-            "\n\\section{Уравнение касательной функции в точке x = %lg.}\n\n",
+            "\n\\section{Уравнение касательной функции в точке x = %lg}\n\n",
             tangent_point);
 
     first_diff_tree.first_node = Diff(tree->first_node, false);
@@ -121,7 +121,7 @@ void Graph_plotter(Text *text, Root *tree, const char *graph_file_name,
         fprintf(tex_file, "g(x) = $%lg \\cdot  x + %lg $", df_x,
                 f_x - df_x * tangent_point);
 
-    fprintf(tex_file, "\n\\section{График функции и касательной к ней.}\n\n");
+    fprintf(tex_file, "\n\\section{График функции и касательной к ней}\n\n");
 
     if (sscanf(text->meta_string[graph_range_str].string_point,
                "Graph range: (%lg,    %lg),  (%lg,    %lg)", &x_min, &x_max,
@@ -165,7 +165,7 @@ void Calculate_function_in_point(Text *text, Root *tree,
         scanf("%lg", &f_x_value);
     }
 
-    fprintf(tex_file, "\n\\section{Вычисление значения функции в точке.}\n\n");
+    fprintf(tex_file, "\n\\section{Вычисление значения функции в точке}\n\n");
 
     fprintf(tex_file, "$ f(%lg) = %lg $", f_x_value,
             Calculate_func(tree->first_node, f_x_value, f_constants));
@@ -186,7 +186,7 @@ void Calculate_derivative_in_point(Text *text, Root *diff_tree,
     }
 
     fprintf(tex_file,
-            "\n\\section{Вычисление производной функции в точке.}\n\n");
+            "\n\\section{Вычисление производной функции в точке}\n\n");
 
     double f_x_value =
         Calculate_func(diff_tree->first_node, df_x_value, f_constants);
@@ -197,7 +197,7 @@ void Calculate_derivative_in_point(Text *text, Root *diff_tree,
 static void Simplification_in_tex(Root *diff_tree) {
     assert(diff_tree);
 
-    fprintf(tex_file, "\n\\section{Упрощение.}\n\n");
+    fprintf(tex_file, "\n\\section{Упрощение}\n\n");
 
     Graph_print_tree(diff_tree);
     fprintf(tex_file, "$");
@@ -226,7 +226,7 @@ void Taking_nth_derivative(Text *text, Root *tree, Root *diff_tree) {
 
     int t_derivative_n = derivative_n;
 
-    fprintf(tex_file, "\n\\section{Взятие %d-ой производной по x.}\n\n",
+    fprintf(tex_file, "\n\\section{Взятие %d-ой производной по x}\n\n",
             derivative_n);
 
     fprintf(tex_file, "$ f(x) = ");

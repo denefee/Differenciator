@@ -3,6 +3,6 @@ set output "out/graph.png"
 set xlabel "x"
 set ylabel "f(x)"
 set grid
-set yrange [0:15]
-set xrange[-5:15]
+set yrange [0:20]
+set xrange[-5:20]
 plot log((x + 5)) * (3 + 4), 1 * (x - 2) + 13.6214
